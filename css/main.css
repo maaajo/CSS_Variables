@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+:root {
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 800px;
+    height: 500px;
+    padding: var(--spacing);
+    background-color: var(--base);
+    filter: blur(var(--blur));
+}
+
+body {
+    min-width: 100vh;
+    background-color: rgb(121, 95, 95);
+}
+
+header {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 4px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+span {
+    color: var(--base);
+}
+
+.options_wrapper {
+    margin: 4rem 0rem 4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+label, input {
+    margin-right: 1.5rem;
+}
+
+.options_wrapper > input:last-child {
+    margin-right: 0;
+}
+
+.img_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+input[type="color"] {
+    cursor: pointer;
+    margin-top: .5rem;
+}
+
+input[type="range"] {
+    cursor: pointer;
+}
